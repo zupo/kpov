@@ -23,5 +23,8 @@ var/ftpd/ubuntu/*
 !var/ftpd/ubuntu/README.txt
 var/ftpd/freebsd/*
 !var/ftpd/freebsd/README.txt
+!var/ftpd/freebsd/boot
+var/ftpd/freebsd/boot/*
+!var/ftpd/freebsd/boot/loader.conf
 var/ftpd/.disk
 sbin
