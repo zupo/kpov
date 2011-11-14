@@ -18,7 +18,9 @@ usr
 vmlinuz
 var/*
 !var/ftpd
-var/ftpd/ubuntu
-var/ftpd/freebsd
+var/ftpd/ubuntu/*
+!var/ftpd/ubuntu/README.txt
+var/ftpd/freebsd/*
+!var/ftpd/freebsd/README.txt
 var/ftpd/.disk
 sbin
