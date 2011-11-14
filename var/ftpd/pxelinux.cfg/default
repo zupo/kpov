@@ -18,6 +18,10 @@ LABEL mfsBSD
     initrd mfsbsd/mfsbsd.iso
     append iso
 
+LABEL DOS
+    kernel memdisk
+    append initrd=fdboot/fdboot.img
+
 LABEL Memtest
 kernel mt86plus
 

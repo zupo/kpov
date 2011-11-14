@@ -23,4 +23,6 @@ var/ftpd/ubuntu/*
 !var/ftpd/ubuntu/README.txt
 var/ftpd/mfsbsd/*
 !var/ftpd/mfsbsd/README.txt
+var/ftpd/fdboot/*
+!var/ftpd/fdboot/README.txt
 sbin
