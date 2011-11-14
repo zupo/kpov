@@ -6,7 +6,7 @@ timeout 100
 #Menus
 
 LABEL Ubuntu LiveCD 11.04.3
-    menu label Run - Ubuntu LiveCD 11.04.3
+    menu label Ubuntu LiveCD 11.04.3
     kernel ubuntu/casper/vmlinuz
     APPEND initrd=ubuntu/casper/initrd.lz netboot=nfs root=/dev/nfs nfsroot=10.12.30.1:/var/ftpd ip=dhcp
 
