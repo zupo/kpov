@@ -1,0 +1,5 @@
+This is my custom message that is displayed when user connects to this PXE server.
+
+
+Greets,
+z.
