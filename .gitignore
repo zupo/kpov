@@ -1,0 +1,16 @@
+dev
+etc
+boot
+home
+initrd.img
+lib
+lib64
+proc
+root
+bin
+sys
+tmp
+usr
+vmlinuz
+var
+sbin
