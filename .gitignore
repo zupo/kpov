@@ -16,5 +16,9 @@ sys
 tmp
 usr
 vmlinuz
-var
+var/*
+!var/ftpd
+var/ftpd/ubuntu
+var/ftpd/freebsd
+var/ftpd/.disk
 sbin
