@@ -1,5 +1,6 @@
 dev
-etc
+etc/*
+!etc/exports
 boot
 home
 initrd.img
