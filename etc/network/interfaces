@@ -5,9 +5,8 @@
 auto lo
 iface lo inet loopback
 
-# The primary network interface
-#auto eth0
-#iface eth0 inet dhcp
+# The primary network interface that is used
+# for DHCP/TFTP server
 
 auto eth0
 iface eth0 inet static
@@ -18,5 +17,7 @@ broadcast 10.12.30.63
 gateway 10.12.30.1 
 
 
+# Secondary interface that is brided to laptop's wifi
+# and gives this box internet connectivity
 auto eth1
 iface eth1 inet dhcp
