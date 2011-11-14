@@ -1,6 +1,9 @@
 dev
 etc/*
 !etc/exports
+!etc/network
+etc/network/*
+!etc/network/interfaces
 boot
 home
 initrd.img
