@@ -12,6 +12,12 @@ LABEL Ubuntu LiveCD 11.04.3
     kernel ubuntu/casper/vmlinuz
     APPEND initrd=ubuntu/casper/initrd.lz netboot=nfs root=/dev/nfs nfsroot=10.12.30.1:/var/ftpd ip=dhcp
 
+LABEL mfsBSD
+    menu label MfsBSD 8.2
+    kernel memdisk
+    initrd mfsbsd/mfsbsd.iso
+    append iso
+
 LABEL Memtest
 kernel mt86plus
 
