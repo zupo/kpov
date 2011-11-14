@@ -9,6 +9,7 @@ home
 initrd.img
 lib
 lib64
+mnt
 proc
 root
 bin
