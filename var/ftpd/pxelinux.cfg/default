@@ -1,7 +1,7 @@
 DEFAULT isolinux/vesamenu.c32
 PROMPT 0
 MENU TITLE Main Menu
-timeout 10
+timeout 100
 
 #Menus
 
