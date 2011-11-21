@@ -2,6 +2,7 @@ DEFAULT vesamenu.c32
 PROMPT 1
 #PROMPT 0
 DISPLAY elite_message.txt
+# or just do: say "Truly Elite!"
 MENU TITLE Main Menu
 timeout 100
 
