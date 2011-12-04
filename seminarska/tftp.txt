@@ -1,0 +1,17 @@
+Za tftp server sem izbral `dnsmasq` katerega sem ze imel na sistemu zaradi
+prejsnjega dela naloge. Potrebno ga je bilo le pravilno nastaviti.
+
+
+Relevantne vrstice iz /etc/dnsmasq.conf:
+enable-tftp
+tftp-root=/var/ftpd
+dhcp-boot=zupan
+
+
+Relevantne vrstice iz /etc/exports:
+/var/ftpd *(async,no_root_squash,no_subtree_check,ro)
+
+
+V direktorij /var/ftpd sem z Ubuntu LiveCD skopiral datoteko `pxelinux.0` in jo
+preimenoval v `zupan`.
+

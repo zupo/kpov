@@ -1,0 +1,10 @@
+Uporabljal sem Mac OS X verzije 10.7.2 na katerem sem izvajal virtualizacijo z
+Oracle VirtualBox 4.1.6.
+
+V Virtualbox-u sem ustvaril dve instanci Ubuntu 32-bit, verzije 10.4:
+- ubuntu server, kateri ponuja DHCP in datotekte potrebne za boot
+- ubuntu client, kateri pridobi IP in se boota (to ime ni ravno posreceno, saj
+  kasneje ta client boota tudi druge OSe)
+
+Kot bootloader sem ponekod uporabil pxelinux.0 iz Ubuntu LiveCDja, ponekod pa
+gpxelinux.0 iz paketa SYSLINUX, skupaj z memory disk emulatorjem.

@@ -1,0 +1,12 @@
+Izbral sem si mfsBSD in ga bootal v memory disk emulator:
+$ wget http://mfsbsd.vx.sk/iso/mfsbsd-8.2-i386.iso
+$ mkdir /var/ftpd/mfsbsd
+$ mv mfsbsd-8.2-i386.iso /var/ftpd/mfsbsd/mfsbsd.iso
+
+
+Relevantne vrstice iz /var/ftpd/pxelinux.cfg/default:
+LABEL mfsBSD
+    menu label mfsBSD 8.2
+    kernel memdisk
+    initrd mfsbsd/mfsbsd.iso
+    append iso

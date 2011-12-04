@@ -1,0 +1,12 @@
+V /var/ftpd/pxelinux.cfg sem poleg datote `default` ustvaril se datoteko
+`13-37-ba-dc-0d-e0`, ki se uporabi kadar pride zahtevek z MAC naslova
+13:37:ba:dc:0d:e0. Nastavil sem jo tako, da izpise sporocilo shranjeno v
+elite_message.txt.
+
+
+Relevantne vrstize iz /var/ftpd/pxelinux.cfg/13-37-ba-dc-0d-e0:
+PROMPT 1
+DISPLAY elite_message.txt
+
+Relevantne vrstize iz /var/ftpd/elite_message.txt:
+Truly ELITE!

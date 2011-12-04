@@ -1,0 +1,27 @@
+Uporabil sem dnsmasq, ki sem ga namestil z ukazom `apt-get install dnsmasq`.
+Zahtevke serviram na omrezju 10.12.30.0/26. Omrezna maska je 255.255.255.192.
+Razpon naslovov je 10.12.30.10 - 10.12.30.62 -> prvih nekaj naslovov sem pustil
+praznih, za takrat ko sem potreboval kaj testirati s staticnimi IPji.
+Broadcast naslov je 10.12.30.63.
+
+
+Relevantne vrstice iz /etc/network/interfaces:
+auto eth0
+iface eth0 inet static
+address 10.12.30.1
+netmask 255.255.255.192
+network 10.12.30.1
+broadcast 10.12.30.63
+gateway 10.12.30.1
+
+
+Relevantne vrstice iz /etc/dnsmasq.conf:
+dhcp-range=10.12.30.10,10.12.30.62,12h
+
+
+Relevantne vrstice iz /var/log/syslog:
+Nov 14 13:19:12 ubuntu-server dnsmasq[650]: started, version 2.52 cachesize 150
+Nov 14 13:19:40 ubuntu-server dnsmasq-dhcp[650]: DHCPDISCOVER(eth0) 10.12.30.20 08:00:27:b5:1e:57
+Nov 14 13:19:40 ubuntu-server dnsmasq-dhcp[650]: DHCPOFFER(eth0) 10.12.30.20 08:00:27:b5:1e:57
+Nov 14 13:19:40 ubuntu-server dnsmasq-dhcp[650]: DHCPREQUEST(eth0) 10.12.30.20 08:00:27:b5:1e:57
+Nov 14 13:19:40 ubuntu-server dnsmasq-dhcp[650]: DHCPACK(eth0) 10.12.30.20 08:00:27:b5:1e:57 ubuntu-client
